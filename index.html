@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+    <style>
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Section styles */
+        section {
+            /* padding: 100px 0; */
+            min-height: 80vh;
+        }
+
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .cardhover:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        /* Contact Info Styling */
+        .contact-info h5 {
+            font-size: 1.3rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info p i {
+            font-size: 1.2rem;
+            color: #00B98E;
+            margin-right: 10px;
+        }
+
+        .contact-info p:hover i {
+            color: #0072ff;
+        }
+
+        .contact-info p:hover {
+            color: #0072ff;
+        }
+
+        /* Make the icons a bit bigger */
+        .contact-info i {
+            font-size: 1.3rem;
+        }
+
+        /* For responsive design */
+        @media (max-width: 768px) {
+            .contact-info h5 {
+                font-size: 1.2rem;
+            }
+
+            .contact-info p {
+                font-size: 1rem;
+            }
+        }
+        .card img{
+            height: 300px;
+
+        }
+        .mine{
+            padding: 10px;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container" style="padding: 10px; margin-top: 10px; background-color: #000000;">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="image/TATTOO.png" height="100px" alt="">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="wild.html">BIRDS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#animals">Animals</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                   
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="animal.html">Animals</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+           <br>
+           <br>
+
+    
+     <!--slider-->
+     <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/most-beautiful-animals-oq9y1oirzovrmtuy.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/card 1.jfif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/NATIONAL-PARKS-USA-1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+</div>
+<!--slider-->
+  
+    <section id="animals" class="py-5">
+        <div class="mine">
+      <div class="container">
+          <h1 class="text-center mb-4">Our Animals</h1>
+          <p class="text-center mb-5">Explore the variety of animals in our zoo.</p>
+          <hr>
+          <!-- yeh pehla row hai -->
+          <div class="row">
+              <!-- Animal Card 1 -->
+            
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                      <img src="image/lion.webp" class="card-img-top" alt="Lion">
+                      <div class="card-body">
+                          <h5 class="card-title">Lion</h5>
+                          <p class="card-text">The lion is known as the king of the jungle. They are strong and majestic animals.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Animal Card 2 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                      <img src="image/download.jfif" class="card-img-top" alt="Elephant">
+                      <div class="card-body">
+                          <h5 class="card-title">Elephant</h5>
+                          <p class="card-text">Elephants are the largest land animals. They are gentle giants with incredible memory.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Animal Card 3 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                      <img src="image/giraffe.jpg" class="card-img-top" alt="Giraffe">
+                      <div class="card-body">
+                          <h5 class="card-title">Giraffe</h5>
+                          <p class="card-text">Giraffes are the tallest animals on earth. They are known for their long necks and gentle nature.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Add more animals by duplicating the card structure -->
+          </div>
+          <!-- yeh dusra row hai -->
+          <div class="row">
+            <!-- Animal Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="image/markhor.jfif" class="card-img-top" alt="Lion">
+                    <div class="card-body">
+                        <h5 class="card-title">Markhor</h5>
+                        <p class="card-text">The markhor is the national animal of Pakistan, where it is also known as the screw-horn or screw-horned goat. The word mārkhor (مارخور), meaning "snake-eater", ...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animal Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="image/rabbit.jfif" class="card-img-top" alt="Elephant">
+                    <div class="card-body">
+                        <h5 class="card-title">Rabbit</h5>
+                        <p class="card-text"> Rabbit, any of 29 species of long-eared mammals belonging to the family Leporidae, excluding hares (genus Lepus).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animal Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="image/download (1).jfif" class="card-img-top" alt="Giraffe">
+                    <div class="card-body">
+                        <h5 class="card-title">Panda</h5>
+                        <p class="card-text">The giant panda is the rarest member of the bear family and among the world's most threatened animals. Learn about WWF's giant panda conservation efforts</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more animals by duplicating the card structure -->
+        </div>
+      </div>
+    </div>
+    </section>
+      
+    <!-- yeh theesra wala hai -->
+    
+
+  <section id="contact" class="py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <p class="text-center mb-5">Get in touch with us for any inquiries or information.</p>
+        <hr>
+
+        <div class="row justify-content-center">
+            <!-- Contact Information -->
+            <div class="col-lg-4 mb-4">
+                <h5>Our Address</h5>
+                <p><span class="material-symbols-outlined text-danger">traffic</span> 123 Zoo Street, Karachi, Pakistan</p>
+
+                <h5>Call Us</h5>
+                <p><span class="material-symbols-outlined text-primary">call</span>+92 340092012</p>
+
+                <h5>Email Us</h5>
+                <p><span class="material-symbols-outlined text-success">contact_mail</span>AmmadAptech@example.com</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <form id="contactForm" action="process_contact.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required placeholder="Subject of your message">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div style={{width: 1000, height: 1024, position: 'relative', background: '#EEFBEA'}}>
+    <div style={{width: 199, height: 69, left: 670, top: 301, position: 'absolute', background: '#99E44D'}} />
+    <div style={{left: 723, top: 317, position: 'absolute', color: 'black', fontSize: 30, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Contact</div>
+    <div style={{width: 197, height: 69, left: 681, top: 512, position: 'absolute', background: '#99E44D'}} />
+    <div style={{left: 723, top: 528, position: 'absolute', color: 'black', fontSize: 30, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Contact</div>
+    <div style={{width: 197, height: 69, left: 402, top: 512, position: 'absolute', background: '#99E44D'}} />
+    <div style={{left: 445, top: 521, position: 'absolute', color: 'black', fontSize: 30, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Animals</div>
+    <div style={{width: 197, height: 69, left: 117, top: 512, position: 'absolute', background: '#99E44D'}} />
+    <div style={{left: 149, top: 528, position: 'absolute', color: 'black', fontSize: 30, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Services</div>
+    <div style={{width: 197, height: 69, left: 117, top: 300, position: 'absolute', background: '#99E44D'}} />
+    <div style={{left: 160, top: 316, position: 'absolute', color: 'black', fontSize: 30, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Animals</div>
+    <div style={{width: 197, height: 69, left: 384, top: 81, position: 'absolute', background: '#99E44D'}} />
+    <div style={{left: 436.28, top: 98.91, position: 'absolute', transform: 'rotate(-2.41deg)', transformOrigin: '0 0', color: 'black', fontSize: 30, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>HOME</div>
+    <div style={{width: 197, height: 69, left: 402, top: 301, position: 'absolute'}}>
+      <div style={{width: 197, height: 69, left: 0, top: 0, position: 'absolute', background: '#99E44D'}} />
+      <div style={{left: 54, top: 12, position: 'absolute', color: 'black', fontSize: 30, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Birds</div>
+    </div>
+    <div style={{width: 99, height: 0, left: 500, top: 390, position: 'absolute', transform: 'rotate(90deg)', transformOrigin: '0 0', border: '2px black solid'}}></div>
+    <div style={{width: 99, height: 0, left: 214, top: 391, position: 'absolute', transform: 'rotate(90deg)', transformOrigin: '0 0', border: '2px black solid'}}></div>
+    <div style={{width: 102.02, height: 0, left: 777, top: 387, position: 'absolute', transform: 'rotate(88.88deg)', transformOrigin: '0 0', border: '2px black solid'}}></div>
+    <div style={{width: 74, height: 0, left: 392, top: 342, position: 'absolute', transform: 'rotate(180deg)', transformOrigin: '0 0', border: '2px black solid'}}></div>
+    <div style={{width: 52, height: 0, left: 606, top: 342, position: 'absolute', border: '2px black solid'}}></div>
+    <div style={{width: 202.06, height: 0, left: 176.97, top: 112.49, position: 'absolute', border: '1px black solid'}}></div>
+    <div style={{width: 163.03, height: 0, left: 587.99, top: 116.50, position: 'absolute', border: '1px black solid'}}></div>
+    <div style={{width: 160.15, height: 0, left: 177, top: 112, position: 'absolute', transform: 'rotate(90deg)', transformOrigin: '0 0', border: '2px black solid'}}></div>
+    <div style={{width: 160.15, height: 0, left: 750, top: 118, position: 'absolute', transform: 'rotate(90deg)', transformOrigin: '0 0', border: '2px black solid'}}></div>
+    <div style={{width: 124, height: 0, left: 500, top: 163, position: 'absolute', transform: 'rotate(90deg)', transformOrigin: '0 0', border: '2px black solid'}}></div>
+  </div>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Zoo Website | All Rights Reserved
+    </footer>
+
+    <link rel="stylesheet" href="css/bootstrap.js">
+</body>
+</html>
